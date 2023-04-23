@@ -42,4 +42,3 @@ function onInputBlur(event) {
     input.classList.remove("valid");
   }
 }
-// та за шоооооооооооо
