@@ -31,5 +31,5 @@ button {
   margin: 0;
 }
 .gallery-item {
-  max-width: 100%;
+  width: 100%;
 }

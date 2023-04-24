@@ -28,7 +28,7 @@ function onHandleSubmit(event) {
   const inputPassword = event.currentTarget.elements.password;
 
   if (inputEmail.value === "" || inputPassword.value === "") {
-    return alert(`Please fill all the field`);
+    alert(`Please fill all the field`);
   } else {
     const formObj = {
       email: inputEmail.value,

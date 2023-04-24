@@ -15,11 +15,12 @@ const ingredients = [
 ];
 const listIngredients = document.querySelector("#ingredients");
 // console.log(listIngredients);
-ingredients.forEach((ingredient) => {
-  const itemIngredients = document.createElement("li");
-  itemIngredients.textContent = ingredient;
-  itemIngredients.classList.add("item");
-  listIngredients.append(itemIngredients);
 
-  console.log(itemIngredients);
+const itemIngredients = ingredients.map((ingredient) => {
+  const itemIngredient = document.createElement("li");
+  itemIngredient.textContent = ingredient;
+  itemIngredient.classList.add("item");
+  return itemIngredient;
 });
+
+listIngredients.append(...itemIngredients);

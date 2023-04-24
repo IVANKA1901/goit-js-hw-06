@@ -20,7 +20,7 @@ const span = document.querySelector(".color");
 button.addEventListener("click", onButtonHandle);
 
 function onButtonHandle(event) {
-  const body = document.querySelector("body");
+  const body = document.body;
   // console.log(body);
   const newBackColor = getRandomHexColor();
   body.style.backgroundColor = newBackColor;
