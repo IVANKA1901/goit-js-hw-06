@@ -8,10 +8,11 @@
 
 const categoriesList = document.querySelector("#categories");
 const categoriesItems = categoriesList.querySelectorAll("li.item");
-
+let countCategories = 0;
 categoriesItems.forEach((item) => {
   const header = item.querySelector("h2").textContent;
   const count = item.querySelectorAll("li").length;
+  console.log(countCategories);
   console.log(`Category: ${header} \ 
   Elements: ${count}`);
 });
